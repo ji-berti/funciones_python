@@ -11,8 +11,14 @@
 
 # --------------------------------
 # Aquí dentro definir la función ordenar
-# def ordenar(lista):
+def ordenar(lista):
+    lista_menor_mayor = sorted(lista)
 
+    return lista_menor_mayor
+
+def ordenar_reverse(lista):
+    lista_mayor_menor = sorted(lista, reverse= True)
+    return lista_mayor_menor
 # --------------------------------
 
 
@@ -33,9 +39,12 @@ if __name__ == '__main__':
 
     # Luego de crear la función invocarla en este lugar:
 
-    # lista_ordenada = ordenar(numeros)
+    lista_ordenada = ordenar(numeros)
+
+    lista_ordenada_reverse = ordenar_reverse(numeros)
 
     # Imprimir en pantalla "lista_ordenada" que tendrá
     # los valores retornado por la función ordenar:
-
+    print(lista_ordenada)
+    print(lista_ordenada_reverse)
     print("terminamos")
